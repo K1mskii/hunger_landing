@@ -1,0 +1,68 @@
+.about {
+    padding: 100px 0;
+}
+
+.about__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__text {
+    width: 600px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.about__title {
+    @include banny;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__line {
+    @include line;
+    margin: 22px 0;
+}
+
+.about__desc {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.about__bold {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.about__img {
+    position: relative;
+}
+
+.about__photo {
+    @include shadow-img;
+
+}
+
+.about__square {
+    position: absolute;
+    @include square;
+    right: 250px;
+}

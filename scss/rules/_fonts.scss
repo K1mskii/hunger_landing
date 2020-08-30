@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Banny-BoldRound";
+    src: url("../fonts/Banny-BoldRound.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@mixin banny {
+    font-family: "Banny-BoldRound";
+    font-weight: bold;
+    font-style: normal;
+}
