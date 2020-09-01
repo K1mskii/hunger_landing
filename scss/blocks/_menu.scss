@@ -1,0 +1,71 @@
+.menu {
+    padding-top: 100px;
+}
+
+.menu__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu__name {
+    @include banny;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.menu__line {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    @include line;
+}
+
+.menu__desc {
+    width: 565px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.menu__submenu {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu__link {
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    padding: 0 40px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.menu__link:last-child {
+    border-right: none;
+}

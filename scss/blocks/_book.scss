@@ -1,0 +1,114 @@
+.book {}
+
+.book__inner {
+    padding-top: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 71.5px;
+}
+
+.book__title {
+    @include banny;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.book__line {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    @include line;
+}
+
+.book__block {
+    margin-top: 10px;
+}
+
+.book__input {
+    width: 277px;
+    padding: 20px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.book__select {
+    width: 317px;
+    padding: 20px 15px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(19, 19, 19, 0.5);
+}
+
+.book__option {}
+
+.book__submit {
+    width: 640px;
+    margin-top: 10px;
+    padding: 20px;
+    background: #E8C300;
+    border-radius: 5px;
+    border: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.book__img {
+    position: relative;
+}
+
+.book__photo {}
+
+.book__square {
+    @include square;
+    position: absolute;
+    top: 22%;
+    right: -120px;
+}
+
+.book__info {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.5);
+}

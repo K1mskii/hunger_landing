@@ -1,0 +1,85 @@
+.specialties {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/specialties/specialties-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 675px;
+    background-position-y: 30%;
+}
+
+.specialties__name {
+    padding: 45px 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.specialties__inner {
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.specialties__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialties__square {
+    z-index: 2;
+    @include square;
+    position: absolute;
+    left: -130px;
+}
+
+.specialties__photo {
+    @include shadow-img;
+}
+
+.specialties__text {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.specialties__title {
+    @include banny;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.specialties__line {
+    margin: 22px 0;
+    @include line;
+}
+
+.specialties__desc {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.specialties__bold {
+    font-weight: bold;
+    font-size: 18px;
+}
