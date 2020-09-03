@@ -1,0 +1,44 @@
+.gallery {
+    width: 100%;
+    background: #f1f1f1;
+}
+
+.gallery__content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.gallery .gallery__img {
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery .gallery__img img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.gallery .gallery__img:hover img {
+    transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width:960px) {
+    .gallery .gallery__img {
+        flex: 33.33%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery .gallery__img {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .gallery .gallery__img {
+        flex: 100%;
+    }
+}

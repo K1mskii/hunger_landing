@@ -1,232 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hunger Landing</title>
-    <!--===============================================================================================-->
-    <link rel="stylesheet" href="css/main.css" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" href="css/reset.css" />
-    <!--===============================================================================================-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <!--===============================================================================================-->
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header__inner">
-        <div class="header__nav">
-          <nav class="header__nav-left">
-            <li><a href="#" class="header__link">Home</a></li>
-            <li><a href="#" class="header__link">About</a></li>
-            <li><a href="#" class="header__link">Team</a></li>
-            <li><a href="#" class="header__link">Booking</a></li>
-          </nav>
-          <img src="img/header/logo.svg" alt="Logo" class="header__logo" />
-          <nav class="header__nav-right">
-            <li><a href="#" class="header__link">Menu</a></li>
-            <li><a href="#" class="header__link">Galerie</a></li>
-            <li><a href="#" class="header__link">Events</a></li>
-            <li><a href="#" class="header__link">Contact</a></li>
-          </nav>
-        </div>
-        <div class="hero">
-          <div class="hero__content">
-            <!-- <div class="hero__left">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hunger Landing</title>
+  <!--===============================================================================================-->
+  <link rel="stylesheet" href="css/main.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" href="css/reset.css" />
+  <!--===============================================================================================-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <!--===============================================================================================-->
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__nav">
+        <nav class="header__nav-left">
+          <li><a href="#" class="header__link">Home</a></li>
+          <li><a href="#" class="header__link">About</a></li>
+          <li><a href="#" class="header__link">Team</a></li>
+          <li><a href="#" class="header__link">Booking</a></li>
+        </nav>
+        <img src="img/header/logo.svg" alt="Logo" class="header__logo" />
+        <nav class="header__nav-right">
+          <li><a href="#" class="header__link">Menu</a></li>
+          <li><a href="#" class="header__link">Galerie</a></li>
+          <li><a href="#" class="header__link">Events</a></li>
+          <li><a href="#" class="header__link">Contact</a></li>
+        </nav>
+      </div>
+      <div class="hero">
+        <div class="hero__content">
+          <!-- <div class="hero__left">
                         <span class="hero__date">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
                     </div> -->
-            <div class="hero__body">
-              <h1 class="hero__name">Restaurant</h1>
-              <p class="hero__text">Hungry people</p>
-              <span class="hero__line"></span>
-              <div class="hero__btns">
-                <button class="hero__btn">Book table</button>
-                <button class="hero__btn-line">Explore</button>
-              </div>
-              <span class="hero__icon"
-                ><i class="fas fa-chevron-down"></i
-              ></span>
+          <div class="hero__body">
+            <h1 class="hero__name">Restaurant</h1>
+            <p class="hero__text">Hungry people</p>
+            <span class="hero__line"></span>
+            <div class="hero__btns">
+              <button class="hero__btn">Book table</button>
+              <button class="hero__btn-line">Explore</button>
             </div>
-            <!-- <div class="hero__social">
+            <span class="hero__icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <!-- <div class="hero__social">
                         <a href="#" class="hero__social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="hero__social-icon"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="hero__social-icon"><i class="fab fa-instagram"></i></a>
                     </div> -->
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- About -->
-    <div class="about">
-      <div class="about__inner">
-        <div class="about__text">
-          <h1 class="about__title">About us</h1>
-          <span class="about__line"></span>
-          <p class="about__desc">
-            <b class="about__bold"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-              velit maximus, molestie est a, tempor magna.</b
-            >
-            <br />
-            Integer ullamcorper neque eu purus euismod, ac faucibus mauris
-            posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
-            feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
-            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
-            semper laoreet.
-          </p>
-        </div>
-        <div class="about__img">
-          <img src="img/about/about-img.jpg" alt="IMG" class="about__photo" />
-        </div>
-        <span class="about__square"></span>
-      </div>
-    </div>
-
-    <!-- Our Team -->
-    <div class="team">
-      <h1 class="team__name">Our team</h1>
-      <div class="team__inner">
-        <div class="team__img">
-          <span class="team__square"></span>
-          <img src="img/team/team.jpg" alt="IMG" class="team__photo" />
-        </div>
-        <div class="team__text">
-          <h2 class="team__title">Master cheff</h2>
-          <span class="team__line"></span>
-          <p class="team__desc">
-            <b class="team__bold"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-              velit maximus, molestie est a, tempor magna.</b
-            >
-            <br />
-            Integer ullamcorper neque eu purus euismod, ac faucibus mauris
-            posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
-            feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
-            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
-            semper laoreet.
-          </p>
         </div>
       </div>
     </div>
+  </header>
 
-    <div class="book">
-      <div class="book__inner">
-        <div class="book__content">
-          <h2 class="book__title">Book a table</h2>
-          <span class="book__line"></span>
-          <div class="book__block">
-            <input type="text" class="book__input" placeholder="Name" />
-            <input type="email" class="book__input" placeholder="Email" />
-          </div>
-          <div class="book__block">
-            <input type="tel" class="book__input" placeholder="Phone" />
-            <select class="book__select">
-              <option class="book__option">People</option>
-            </select>
-          </div>
-          <div class="book__block">
-            <input type="text" class="book__input" placeholder="Date (mm/dd)" />
-            <select class="book__select">
-              <option class="book__option">Time</option>
-            </select>
-          </div>
-          <input type="submit" class="book__submit" value="Book now" />
-        </div>
-        <div class="book__img">
-          <img src="img/book/book.jpg" alt="IMG" class="book__photo" />
-          <span class="book__square"></span>
-        </div>
+  <!-- About -->
+  <div class="about">
+    <div class="about__inner">
+      <div class="about__text">
+        <h2 class="about__title">About us</h2>
+        <span class="about__line"></span>
+        <p class="about__desc">
+          <b class="about__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit maximus, molestie est a, tempor magna.</b>
+          <br />
+          Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+          posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+          feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+          Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+          semper laoreet.
+        </p>
       </div>
-      <div class="book__info">
-        <span
-          >Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131
-          637/+40 726 458 782</span
-        >
+      <div class="about__img">
+        <img src="img/about/about-img.jpg" alt="IMG" class="about__photo" />
+      </div>
+      <span class="about__square"></span>
+    </div>
+  </div>
+
+  <!-- Our Team -->
+  <div class="team">
+    <h2 class="team__name">Our team</h2>
+    <div class="team__inner">
+      <div class="team__img">
+        <span class="team__square"></span>
+        <img src="img/team/team.jpg" alt="IMG" class="team__photo" />
+      </div>
+      <div class="team__text">
+        <h2 class="team__title">Master cheff</h2>
+        <span class="team__line"></span>
+        <p class="team__desc">
+          <b class="team__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit maximus, molestie est a, tempor magna.</b>
+          <br />
+          Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+          posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+          feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+          Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+          semper laoreet.
+        </p>
       </div>
     </div>
+  </div>
 
-    <!-- Specialties -->
-    <div class="specialties">
-      <h1 class="specialties__name">Specialties</h1>
-      <div class="specialties__inner">
-        <div class="specialties__img">
-          <span class="specialties__square"></span>
-          <img
-            src="img/specialties/specialties.jpg"
-            alt="IMG"
-            class="specialties__photo"
-          />
+  <div class="book">
+    <div class="book__inner">
+      <div class="book__content">
+        <h2 class="book__title">Book a table</h2>
+        <span class="book__line"></span>
+        <div class="book__block">
+          <input type="text" class="book__input" placeholder="Name" />
+          <input type="email" class="book__input" placeholder="Email" />
         </div>
-        <div class="specialties__text">
-          <h2 class="specialties__title">Chocolate pancakes</h2>
-          <span class="specialties__line"></span>
-          <p class="specialties__desc">
-            <b class="specialties__bold"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-              velit maximus, molestie est a, tempor magna.</b
-            >
-            <br />
-            Integer ullamcorper neque eu purus euismod, ac faucibus mauris
-            posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
-            feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
-            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
-            semper laoreet.
-          </p>
+        <div class="book__block">
+          <input type="tel" class="book__input" placeholder="Phone" />
+          <select class="book__select">
+            <option class="book__option">People</option>
+          </select>
         </div>
+        <div class="book__block">
+          <input type="text" class="book__input" placeholder="Date (mm/dd)" />
+          <select class="book__select">
+            <option class="book__option">Time</option>
+          </select>
+        </div>
+        <input type="submit" class="book__submit" value="Book now" />
+      </div>
+      <div class="book__img">
+        <img src="img/book/book.jpg" alt="IMG" class="book__photo" />
+        <span class="book__square"></span>
       </div>
     </div>
+    <div class="book__info">
+      <span>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131
+        637/+40 726 458 782</span>
+    </div>
+  </div>
 
-    <div class="menu">
-      <div class="menu__inner">
-        <div class="menu__title">
-          <h2 class="menu__name">Delicious menu</h2>
-          <span class="menu__line"></span>
-          <p class="menu__desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-            velit maximus, molestie est a, tempor magna.
-          </p>
-        </div>
-        <nav class="menu__submenu">
-          <li class="menu__link">Soupe</li>
-          <li class="menu__link">Pizza</li>
-          <li class="menu__link">Pasta</li>
-          <li class="menu__link">Desert</li>
-          <li class="menu__link">Wine</li>
-          <li class="menu__link">Beer</li>
-          <li class="menu__link">Drinks</li>
-        </nav>
-        <div class="menu__items">
-          <div class="menu__item">
-            <div class="menu__text">span.menu__</div>
+  <!-- Specialties -->
+  <div class="specialties">
+    <h2 class="specialties__name">Specialties</h2>
+    <div class="specialties__inner">
+      <div class="specialties__img">
+        <span class="specialties__square"></span>
+        <img src="img/specialties/specialties.jpg" alt="IMG" class="specialties__photo" />
+      </div>
+      <div class="specialties__text">
+        <h2 class="specialties__title">Chocolate pancakes</h2>
+        <span class="specialties__line"></span>
+        <p class="specialties__desc">
+          <b class="specialties__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit maximus, molestie est a, tempor magna.</b>
+          <br />
+          Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+          posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+          feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+          Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+          semper laoreet.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu">
+    <div class="menu__inner">
+      <div class="menu__title">
+        <h2 class="menu__name">Delicious menu</h2>
+        <span class="menu__line"></span>
+        <p class="menu__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+          velit maximus, molestie est a, tempor magna.
+        </p>
+      </div>
+      <nav class="menu__submenu">
+        <li class="menu__link">Soupe</li>
+        <li class="menu__link">Pizza</li>
+        <li class="menu__link">Pasta</li>
+        <li class="menu__link">Desert</li>
+        <li class="menu__link">Wine</li>
+        <li class="menu__link">Beer</li>
+        <li class="menu__link">Drinks</li>
+      </nav>
+      <div class="menu__items">
+        <div class="menu__item">
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
           </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+        </div>
+        <div class="menu__item">
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+        </div>
+        <div class="menu__item">
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
+          <div class="menu__block">
+            <div class="menu__text">
+              <span class="menu__caption">Pizza Quatro Stagioni . . . .</span>
+              <span class="menu__story">Integer ullamcorper neque eu purus euismod</span>
+            </div>
+            <span class="menu__price">55,68 USD</span>
+          </div>
+          <!-- /.menu__block -->
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p class="footer__copyright">
-        © Copyright <b class="footer__bold">K1mskii</b> 2020
-      </p>
-    </footer>
+  <div class="gallery">
+    <div class="gallery__content">
 
-    <!--===============================================================================================-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="js/main.js"></script>
-    <!--===============================================================================================-->
-  </body>
+      <a href="img/gallery/gallery1.jpg" class="gallery__img">
+        <img src="img/gallery/gallery1.jpg" alt="IMG">
+      </a>
+
+      <a href="img/gallery/gallery2.jpg" class="gallery__img">
+        <img src="img/gallery/gallery2.jpg" alt="IMG">
+      </a>
+
+      <a href="img/gallery/gallery3.jpg" class="gallery__img">
+        <img src="img/gallery/gallery3.jpg" alt="IMG">
+      </a>
+
+      <a href="img/gallery/gallery4.jpg" class="gallery__img">
+        <img src="img/gallery/gallery4.jpg" alt="IMG">
+      </a>
+
+    </div>
+  </div>
+
+  <div class="contacts">
+    <div class="contacts__inner">
+      <div class="contacts__title">
+        <h2 class="contacts__name">Contact</h2>
+        <span class="contacts__line"></span>
+        <p class="contacts__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+          molestie est a, tempor magna.</p>
+      </div>
+      <form action="#" class="contacts__form">
+        <div class="contacts__row">
+          <input type="text" class="contacts__input" placeholder="Name">
+          <input type="email" class="contacts__input" placeholder="Email">
+          <input type="tel" class="contacts__input" placeholder="Phone">
+        </div>
+        <input type="text" class="contacts__textarea" placeholder="Message">
+        <div class="contacts__row">
+          <div class="contacts__info">
+            <span class="contacts__info-text"><i class="fas fa-map-marker-alt contacts__icon"></i>5th London Boulevard,
+              U.K.</span>
+            <span class="contacts__info-text"><i class="fas fa-phone contacts__icon"></i>+40 729 131 637/+40 726 458
+              782</span>
+            <span class="contacts__info-text"><i
+                class="fas fa-envelope contacts__icon"></i>office@mindblister.com</span>
+          </div>
+          <input type="submit" class="contacts__submit" value="Send message">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div id="map"></div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__copyright">
+      © Copyright <b class="footer__bold">K1mskii</b> 2020
+    </p>
+  </footer>
+
+  <!--===============================================================================================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="js/main.js"></script>
+  <!--===============================================================================================-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+  <script>
+    $(".gallery__content").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+  </script>
+  <!--===============================================================================================-->
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZw1M5qoTSdkAYkcNRReoVx0_0AtaOXu8&callback=initMap">
+  </script>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {
+        lat: 51.5298887,
+        lng: -0.1707836
+      };
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+        document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <!--===============================================================================================-->
+</body>
+
 </html>

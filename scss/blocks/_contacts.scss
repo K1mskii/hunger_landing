@@ -1,0 +1,131 @@
+.contacts {
+    padding: 100px 0;
+}
+
+.contacts__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.contacts__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacts__name {
+    @include banny;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.contacts__line {
+    margin: 10px 0 20px 0;
+    @include line;
+}
+
+.contacts__desc {
+    width: 565px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.contacts__form {
+    margin-top: 50px;
+}
+
+.contacts__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contacts__input {
+    margin: 0 5px;
+    padding: 20px;
+    width: 420px;
+    border-radius: 5px;
+    border: none;
+    background: #E5E5E5;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.contacts__textarea {
+    margin: 10px 5px 0px 5px;
+    width: 1250px;
+    padding: 20px 0 120px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #E5E5E5;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.contacts__info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contacts__row:last-child {
+    padding-top: 10px;
+}
+
+.contacts__info-text {
+    margin-right: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.contacts__icon {
+    margin-right: 10px;
+    color: $yellow;
+}
+
+.contacts__submit {
+    margin-left: 20px;
+    width: 665px;
+    padding: 20px;
+    background: #E8C300;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}

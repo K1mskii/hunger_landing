@@ -1,5 +1,5 @@
 .menu {
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .menu__inner {
@@ -68,4 +68,54 @@
 
 .menu__link:last-child {
     border-right: none;
+}
+
+.menu__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu__item {
+    margin-right: 43.5px;
+}
+
+.menu__block {
+    margin-bottom: 35px;
+    display: flex;
+}
+
+.menu__block:last-child {
+    margin-bottom: 0;
+}
+
+.menu__text {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__caption {
+    @include banny;
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.menu__story {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.menu__price {
+    @include banny;
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
 }
