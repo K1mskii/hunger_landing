@@ -35,7 +35,7 @@
 }
 
 .menu__desc {
-    width: 565px;
+    max-width: 565px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -118,4 +118,15 @@
     font-size: 18px;
     line-height: 18px;
     color: #333333;
+}
+
+@media screen and (max-width: 1187px) {
+    .menu__item {
+        margin-bottom: 40px;
+    }
+
+    .menu__item:last-child {
+        margin-bottom: 0px;
+    }
+
 }

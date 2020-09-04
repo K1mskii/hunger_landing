@@ -16,7 +16,7 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-right: 71.5px;
+    margin-right: 72px;
 }
 
 .book__title {
@@ -90,7 +90,9 @@
     position: relative;
 }
 
-.book__photo {}
+.book__photo {
+    @include shadow-img;
+}
 
 .book__square {
     @include square;
@@ -111,4 +113,141 @@
     line-height: 12px;
     text-align: center;
     color: rgba(51, 51, 51, 0.5);
+}
+
+@media screen and (max-width: 1437px) {
+    .book__photo {
+        width: 350px;
+        height: 350px;
+    }
+
+    .book__square {
+        top: 20%;
+        width: 200px;
+        height: 200px;
+        right: -105px;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .book__photo {
+        width: 350px;
+        height: 350px;
+    }
+
+    .book__square {
+        top: 25%;
+        width: 150px;
+        height: 150px;
+        right: -75px;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .book__input {
+        width: 200px;
+    }
+
+    .book__select {
+        width: 240px;
+    }
+
+    .book__block {
+        margin-top: 5px;
+    }
+
+    .book__submit {
+        width: 484.16px;
+    }
+
+}
+
+@media screen and (max-width: 1065px) {
+    .book__content {
+        margin-right: 0;
+    }
+
+    .book__img {
+        display: none;
+    }
+
+    .book__input {
+        width: 277px;
+    }
+
+    .book__select {
+        width: 317px;
+    }
+
+    .book__block {
+        margin-top: 10px;
+    }
+
+    .book__submit {
+        width: 640px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .book__input {
+        width: 200px;
+    }
+
+    .book__select {
+        width: 240px;
+    }
+
+    .book__block {
+        margin-top: 5px;
+    }
+
+    .book__submit {
+        width: 484.16px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .book__block {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book__input {
+        width: 277px;
+        margin-bottom: 5px;
+    }
+
+    .book__select {
+        margin-bottom: 5px;
+        width: 317px;
+    }
+
+    .book__submit {
+        margin-top: 0;
+        width: 317px;
+    }
+
+    .book__info {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .book__input {
+        width: 200px;
+        margin-bottom: 5px;
+    }
+
+    .book__select {
+        margin-bottom: 5px;
+        width: 240px;
+    }
+
+    .book__submit {
+        margin-top: 0;
+        width: 240px;
+    }
 }
