@@ -78,7 +78,7 @@
 }
 
 .menu__item {
-    margin-right: 43.5px;
+    margin: 0 22.5px;
 }
 
 .menu__block {
@@ -129,4 +129,48 @@
         margin-bottom: 0px;
     }
 
+}
+
+@media screen and (max-width: 827px) {
+    .menu__link {
+        border-right: none;
+        margin-bottom: 10px;
+        padding: 0 70px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .menu__link {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .menu__link {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .menu__link {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .menu__link {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .menu__link {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .menu__link {
+        padding: 0 10px;
+    }
 }

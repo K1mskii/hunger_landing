@@ -150,3 +150,15 @@
         height: 500px;
     }
 }
+
+@media screen and (max-width: 385px) {
+    .team {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .team {
+        height: 700px;
+    }
+}

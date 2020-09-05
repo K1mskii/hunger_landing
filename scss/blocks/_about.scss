@@ -68,11 +68,14 @@
     top: 22%;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1400px) {
     .about__text {
         max-width: 400px;
         margin: 0 60px;
     }
+}
+
+@media screen and (max-width: 1305px) {
 
     .about__photo {
         width: 350px;

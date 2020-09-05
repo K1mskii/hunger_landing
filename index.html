@@ -35,16 +35,62 @@
         <div class="header__nav">
           <nav class="header__nav-left">
             <li><a href="#" class="header__link">Home</a></li>
-            <li><a href="#" class="header__link scroll-to">About</a></li>
-            <li><a href="#" class="header__link scroll-to">Team</a></li>
-            <li><a href="#" class="header__link scroll-to">Booking</a></li>
+            <li><a href="#about" class="header__link scroll-to">About</a></li>
+            <li><a href="#team" class="header__link scroll-to">Team</a></li>
+            <li><a href="#book" class="header__link scroll-to">Booking</a></li>
           </nav>
           <img src="img/header/logo.svg" alt="Logo" class="header__logo" />
           <nav class="header__nav-right">
-            <li><a href="#" class="header__link scroll-to">Menu</a></li>
-            <li><a href="#" class="header__link scroll-to">Galerie</a></li>
-            <li><a href="#" class="header__link scroll-to">Events</a></li>
-            <li><a href="#" class="header__link scroll-to">Contact</a></li>
+            <li>
+              <a href="#menu-section" class="header__link scroll-to">Menu</a>
+            </li>
+            <li>
+              <a href="#gallery" class="header__link scroll-to">Galerie</a>
+            </li>
+            <li>
+              <a href="#specialties" class="header__link scroll-to"
+                >Specialties</a
+              >
+            </li>
+            <li>
+              <a href="#contacts" class="header__link scroll-to">Contact</a>
+            </li>
+          </nav>
+
+          <!-- Adaptive Menu -->
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a href="#" class="header__link">Home</a></li>
+                <li>
+                  <a href="#about" class="header__link scroll-to">About</a>
+                </li>
+                <li><a href="#team" class="header__link scroll-to">Team</a></li>
+                <li>
+                  <a href="#book" class="header__link scroll-to">Booking</a>
+                </li>
+                <li>
+                  <a href="#menu-section" class="header__link scroll-to"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a href="#gallery" class="header__link scroll-to">Galerie</a>
+                </li>
+                <li>
+                  <a href="#specialties" class="header__link scroll-to"
+                    >Specialties</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacts" class="header__link scroll-to">Contact</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
         <div class="hero">
@@ -56,7 +102,9 @@
               <button class="hero__btn">Book table</button>
               <button class="hero__btn-line">Explore</button>
             </div>
-            <span class="hero__icon"><i class="fas fa-chevron-down"></i></span>
+            <a href="#about" class="hero__icon scroll-to"
+              ><i class="fas fa-chevron-down"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -182,7 +230,7 @@
       </div>
     </div>
 
-    <div class="menu" id="menu">
+    <div class="menu" id="menu-section">
       <div class="menu__inner">
         <div class="menu__title">
           <h2 class="menu__name">Delicious menu</h2>
@@ -193,13 +241,13 @@
           </p>
         </div>
         <nav class="menu__submenu">
-          <li class="menu__link">Soupe</li>
-          <li class="menu__link">Pizza</li>
-          <li class="menu__link">Pasta</li>
-          <li class="menu__link">Desert</li>
-          <li class="menu__link">Wine</li>
-          <li class="menu__link">Beer</li>
-          <li class="menu__link">Drinks</li>
+          <li class="menu__link"><a href="#">Soupe</a></li>
+          <li class="menu__link"><a href="#">Pizza</a></li>
+          <li class="menu__link"><a href="#">Pasta</a></li>
+          <li class="menu__link"><a href="#">Desert</a></li>
+          <li class="menu__link"><a href="#">Wine</a></li>
+          <li class="menu__link"><a href="#">Beer</a></li>
+          <li class="menu__link"><a href="#">Drinks</a></li>
         </nav>
         <div class="menu__items">
           <div class="menu__item">
@@ -504,8 +552,9 @@
     <script src="js/main.js"></script>
     <!--===============================================================================================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
+    <!--===============================================================================================-->
     <script>
+      // Gallery
       $(".gallery__content").magnificPopup({
         delegate: "a",
         type: "image",
@@ -519,41 +568,6 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZw1M5qoTSdkAYkcNRReoVx0_0AtaOXu8&callback=initMap"
     ></script>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        var uluru = {
-          lat: 51.5298887,
-          lng: -0.1707836,
-        };
-        // The map, centered at Uluru
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
-        });
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
     <!--===============================================================================================-->
-    <script>
-      console.log("working");
-      $("a.scroll-to").on("click", function (e) {
-        e.preventDefault();
-        var anchor = $(this).attr("href");
-        $("html, body")
-          .stop()
-          .animate(
-            {
-              scrollTop: $(anchor).offset().top - 0,
-            },
-            800
-          );
-      });
-    </script>
   </body>
 </html>
